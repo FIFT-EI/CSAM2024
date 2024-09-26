@@ -1,0 +1,83 @@
+<meta charset="UTF-8" /><meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<link href="https://use.typekit.net/omw1oud.css" rel="stylesheet" />
+<link href="https://helpimg.s3.amazonaws.com/landing_pages/CSAM/2024/basic/styles_basic.css" rel="stylesheet" />
+<title tkey="page-title"></title>
+<div class="content-wrapper">
+<div class="container">
+<header><svg data-name="Layer 1" id="Layer_1" viewbox="0 0 599.98 109.34" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"> <defs>
+<style type="text/css">.cls-1 { fill: url(#radial-gradient); } .cls-1, .cls-2, .cls-3, .cls-4, .cls-5 { stroke-width: 0px; } .cls-2 { isolation: isolate; opacity: 0.64; } .cls-2, .cls-4 { fill: #fff; } .cls-3 { fill: url(#radial-gradient-2); } .cls-5 { fill: #f16823; }
+</style>
+</defs> </svg>
+<div class="logo"><img alt="EI Logo" src="https://axishealthcareconsulting.com/wp-content/uploads/2023/05/6c4f1aaf-38f8-4c6f-a99c-9d8d913f54f3.png" /></div>
+
+<main>
+<h1 class="step-3" tkey="header">&nbsp;</h1>
+
+<h2 class="step-2" tkey="description-1">&nbsp;</h2>
+
+<h3 tkey="description-2">&nbsp;</h3>
+
+<div class="cards" role="list">
+<div class="card" role="list-item">
+<div class="card-number step-2" tkey="number-1">&nbsp;</div>
+
+<p tkey="rule-1">&nbsp;</p>
+</div>
+
+<div class="card" role="list-item">
+<div class="card-number step-2" tkey="number-2">&nbsp;</div>
+
+<p tkey="rule-2">&nbsp;</p>
+</div>
+
+<div class="card" role="list-item">
+<div class="card-number step-2" tkey="number-3">&nbsp;</div>
+
+<p tkey="rule-3">&nbsp;</p>
+</div>
+</div>
+
+<p tkey="description-3">&nbsp;</p>
+
+<div class="logo"><span class="custom-text">Cyber Security Awareness Month 2024</span></div>
+</main>
+</header>
+</div>
+<img alt="" class="aj-basic" src="https://helpimg.s3.amazonaws.com/landing_pages/CSAM/2024/basic/aj_cropped.png" /></div>
+<script src="https://code.jquery.com/jquery-2.1.4.min.js"></script><script charset="UTF-8">
+  var translations = {};
+  var en_us = '{ \
+    "language" : "English - United States",\
+    "language-code" : "en",\
+    "page-title" : "EI - Cyber Security Awareness Month",\
+    "header" : "You have been eliminated",\
+    "description-1" : "As you are aware, during Cyber Security Awareness Month we are running a Phishing Simulation Survival Game. As you clicked into the link, unfortunately you have been eliminated.",\
+    "description-2" : "Here are three useful rules to help keep you safe online:",\
+    "number-1" : "01",\
+    "rule-1" : "Always verify the sender eamil address",\
+    "number-2" : "02",\
+    "rule-2" : "Unexpected/Unusual: do not assume an email is genuine or click into a link to check out of interest.",\
+    "number-3" : "03",\
+    "rule-3" : "Trust but verify: Even trusted emails can be compromised. Always double-check before interacting with shared content.",\
+    "description-3" : "Report any suspicious emails using the Phish Alert Button. There are many ways that internet criminals will try to scam you. Stay alert—YOU are the last line of defense!"}';
+  translations['en-US'] = en_us;
+  var translate = function (jsdata) {
+    $('[tkey]').each(function (index) {
+      var strTr = jsdata[$(this).attr('tkey')];
+      $(this).html(strTr);
+    });
+  };
+  translate(JSON.parse(translations['en-US']));
+</script>
+<style type="text/css">.custom-text {
+    font-size: 40px;
+    color: white;
+    font-family: 'Felix Titling', sans-serif;
+    font-weight: bold;
+    text-shadow: 0 0 5px rgba(255, 255, 255, 0.8);
+    margin-top: 20px; /* Adjust this value to move the text lower */
+  }
+  footer {
+    display: none; /* Hide the footer to remove the disclaimer */
+  }
+</style>
