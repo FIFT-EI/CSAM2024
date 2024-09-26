@@ -1,0 +1,231 @@
+:root {
+	--clr-neutral-100: hsl(0, 0%, 100%);
+	--clr-neutral-600: hsl(0, 0%, 17%);
+
+	/* Secondary color */
+	--clr-secondary: hsl(196, 15%, 55%);
+
+	/* Accent color */
+	--clr-accent: hsl(20, 89%, 54%);
+
+	/* Font family */
+	--ff: noto-sans, sans-serif;
+
+	/* Padding */
+	--padding-xs: clamp(0.5rem, 1.5%, 0.75rem);
+	--padding-sm: clamp(1rem, 3%, 1.5rem);
+	--padding-md: clamp(1.5rem, 6%, 3rem);
+	--padding-lg: clamp(3rem, 12%, 6rem);
+
+	/* Margin */
+	--block-flow-xs: min(1rem, 2vh);
+	--block-flow-sm: min(2rem, 4vh);
+	--block-flow-md: min(4rem, 8vh);
+	--block-flow-lg: min(8rem, 16vh);
+
+	/* Font Sizes */
+
+	/* @link https://utopia.fyi/type/calculator?c=320,18,1.2,1240,20,1.25,5,2,&s=0.75|0.5|0.25,1.5|2|3|4|6,s-l&g=s,l,xl,12 */
+
+	/* Step -1: 15px â†’ 12.003px */
+	--step--1: clamp(0.7502rem, 1.0027rem + -0.3258vi, 0.9375rem);
+	/* Step 0: 18px â†’ 16px */
+	--step-0: clamp(1rem, 1.1685rem + -0.2174vi, 1.125rem);
+	/* Step 1: 21.6px â†’ 21.328px */
+	--step-1: clamp(1.333rem, 1.3559rem + -0.0296vi, 1.35rem);
+	/* Step 2: 25.92px â†’ 28.4302px */
+	--step-2: clamp(1.62rem, 1.5654rem + 0.2729vi, 1.7769rem);
+	/* Step 3: 31.104px â†’ 37.8975px */
+	--step-3: clamp(1.944rem, 1.7963rem + 0.7384vi, 2.3686rem);
+	/* Step 4: 37.3248px â†’ 50.5174px */
+	--step-4: clamp(2.3328rem, 2.046rem + 1.434vi, 3.1573rem);
+	/* Step 5: 44.7898px â†’ 67.3396px */
+	--step-5: clamp(2.7994rem, 2.3091rem + 2.4511vi, 4.2087rem);
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+html {
+	font-size: 100%;
+}
+
+/* Utility Classes */
+.step--1 {
+	font-size: var(--step--1);
+}
+.step-0 {
+	font-size: var(--step-0);
+}
+.step-1 {
+	font-size: var(--step-1);
+}
+.step-2 {
+	font-size: var(--step-2);
+}
+.step-3 {
+	font-size: var(--step-3);
+}
+
+.margin-bottom {
+	margin-block-end: var(--block-flow-sm);
+}
+
+/* Custom styles */
+
+h1 {
+	letter-spacing: 0.02em;
+}
+h2 {
+	font-weight: 400;
+	margin-block: var(--block-flow-sm);
+}
+
+h3 {
+	font-size: var(--step-2);
+	font-weight: 300;
+}
+
+p {
+	font-size: var(--step-1);
+	font-weight: 300;
+}
+
+body {
+	font-family: var(--ff);
+	color: var(--clr-neutral-100);
+	background-size: cover;
+	text-align: center;
+	text-wrap: balance;
+	line-height: 1.3;
+}
+
+a {
+	text-decoration: none;
+}
+
+/*Custom Styles*/
+
+header {
+	width: 100%;
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: center;
+	gap: var(--padding-sm);
+	svg {
+		max-width: 15rem;
+	}
+}
+.content-wrapper {
+	display: grid;
+	grid-template-columns: 65% 35%;
+	background: url('https://helpimg.s3.amazonaws.com/landing_pages/CSAM/2024/basic/background.png');
+	background-blend-mode: multiply;
+	background-size: cover;
+	background-position: center center;
+}
+
+.container {
+	padding: var(--padding-md);
+	background: hwb(0 0% 100% / 0.7);
+}
+
+img {
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-end;
+	margin: auto auto 0 auto;
+}
+
+img.aj-basic {
+	width: 80%;
+}
+
+img.aj-sei {
+	width: 90%;
+}
+
+header {
+	width: 100%;
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: center;
+	gap: var(--padding-sm);
+	svg {
+		max-width: 15rem;
+	}
+}
+
+main {
+	margin-inline: auto;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin-block-start: var(--block-flow-sm);
+	p {
+		margin-block-start: var(--block-flow-sm);
+	}
+
+	svg {
+		max-width: 10rem;
+		margin-inline-end: 2rem;
+	}
+}
+
+.cards {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(25ch, 1fr));
+	grid-gap: 3rem;
+	margin-block-start: var(--block-flow-sm);
+	width: 90%;
+}
+
+.card {
+	display: flex;
+	flex-direction: column;
+	gap: 2rem;
+	align-items: center;
+	padding: var(--padding-md);
+	border: 0.5px solid var(--clr-secondary);
+	border-radius: 1rem;
+	position: relative;
+	p {
+		margin: 0;
+	}
+}
+.card-number {
+	border: 2px solid var(--clr-secondary);
+	border-radius: 50px;
+	height: 4rem;
+	width: 4rem;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-weight: 400;
+	margin: 0;
+}
+
+.logo {
+	margin-block-start: var(--block-flow-sm);
+	img {
+		width: 30%;
+	}
+}
+
+footer {
+	background-color: var(--clr-accent);
+	padding-block: var(--padding-sm);
+	z-index: 100;
+}
+
+@media screen and (max-width: 85em) {
+	main {
+		margin-block-start: var(--block-flow-sm);
+	}
+	.content-wrapper {
+		grid-template-columns: 100% 0;
+	}
+}
